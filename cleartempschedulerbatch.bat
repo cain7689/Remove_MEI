@@ -29,4 +29,4 @@ setlocal & pushd .
 cd /d %~dp0
 if '%1'=='ELEV' (del "%vbsGetPrivileges%" 1>nul 2>nul  &  shift /1)
 
-SCHTASKS /CREATE  /TN "ClearTemp\removeIME" -F /TR "%~dp0removeIME.bat" /SC onstart /RL HIGHEST /NP
+SCHTASKS /CREATE  /TN "ClearTemp\removeIME" -F /TR "%~dp0remove _MEIXXXXX.bat" /SC onstart /RL HIGHEST /NP
